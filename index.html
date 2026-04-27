@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Method Cycle Workshop | Precision Bicycle Service in Madison</title>
+  <style>
+    :root{
+      --charcoal:#1B1B1A;
+      --espresso:#2C241D;
+      --copper:#B45A2A;
+      --taupe:#7A6A56;
+      --cream:#F2ECE6;
+      --soft:#E5D9CC;
+      --line:rgba(27,27,26,.18);
+      --white:#fffaf5;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--charcoal);font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;line-height:1.55} a{color:inherit;text-decoration:none} .serif{font-family:Georgia, "Times New Roman", serif}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}.eyebrow{letter-spacing:.22em;text-transform:uppercase;color:var(--copper);font-size:.76rem;font-weight:700}.btn{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--copper);background:var(--copper);color:var(--cream);padding:.9rem 1.15rem;border-radius:999px;font-weight:700;letter-spacing:.04em;box-shadow:0 12px 30px rgba(44,36,29,.16)}.btn.secondary{background:transparent;color:var(--charcoal);border-color:var(--line);box-shadow:none}.topbar{position:sticky;top:0;z-index:20;background:rgba(242,236,230,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:14px}.mark{width:42px;height:42px;border:1px solid var(--line);display:grid;place-items:center;background:var(--charcoal);color:var(--cream)}.mark svg{width:30px}.wordmark{letter-spacing:.24em;font-weight:800}.wordmark span{display:block;font-size:.68rem;letter-spacing:.38em;color:var(--copper);margin-top:-3px}.links{display:flex;gap:26px;font-size:.86rem;letter-spacing:.12em;text-transform:uppercase}.hero{padding:64px 0 86px}.hero-grid{display:grid;grid-template-columns:1fr .92fr;gap:54px;align-items:center}.hero h1{font-size:clamp(3rem,7vw,7.4rem);line-height:.88;margin:22px 0 20px;letter-spacing:.03em}.hero .sub{font-size:clamp(1.25rem,2vw,1.75rem);color:var(--espresso);max-width:710px}.hero .copy{font-size:1.03rem;color:rgba(27,27,26,.76);max-width:650px}.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:44px;border:1px solid var(--line)}.trust div{background:rgba(255,250,245,.46);padding:20px}.trust strong{display:block;font-size:1.35rem}.bike-card{background:var(--charcoal);color:var(--cream);border-radius:28px;padding:22px;border:1px solid rgba(255,255,255,.08);box-shadow:0 28px 70px rgba(44,36,29,.22);position:relative;overflow:hidden}.bike-card:before{content:"";position:absolute;inset:22px;border:1px solid rgba(242,236,230,.17);border-radius:20px}.bike-card .plate{position:relative;z-index:1;min-height:470px;display:grid;align-content:center}.bike-caption{position:relative;z-index:2;display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(242,236,230,.22);padding-top:18px;color:rgba(242,236,230,.72);font-size:.88rem}.bike-caption b{color:var(--cream)}.bike-svg{width:100%;height:auto;filter:drop-shadow(0 18px 28px rgba(0,0,0,.3))}.section{padding:84px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.section h2{font-size:clamp(2.1rem,4vw,4.6rem);line-height:.96;margin:10px 0}.section p.lead{max-width:650px;color:rgba(27,27,26,.72);font-size:1.08rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(255,250,245,.54);border:1px solid var(--line);border-radius:22px;padding:28px;min-height:240px}.card .num{font-family:Georgia,serif;color:var(--copper);font-size:2.2rem}.card h3{font-size:1.45rem;margin:10px 0}.card p,.card li{color:rgba(27,27,26,.72)}.card ul{padding-left:19px}.dark{background:var(--charcoal);color:var(--cream)}.dark .section{border-top-color:rgba(242,236,230,.13)}.dark .card{background:rgba(242,236,230,.06);border-color:rgba(242,236,230,.16)}.dark .card p,.dark .card li,.dark p.lead{color:rgba(242,236,230,.72)}.process{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:1px solid rgba(242,236,230,.16)}.step{padding:30px;border-right:1px solid rgba(242,236,230,.16)}.step:last-child{border-right:0}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:46px;align-items:start}.quote{background:var(--espresso);color:var(--cream);border-radius:28px;padding:34px;font-size:1.55rem;line-height:1.25}.contact{background:var(--espresso);color:var(--cream);border-radius:34px;padding:44px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}.contact h2{margin:0;font-size:clamp(2.5rem,5vw,5.5rem);line-height:.92}.fine{color:rgba(242,236,230,.7)}footer{padding:34px 0;color:rgba(27,27,26,.58);font-size:.85rem}.tabbar{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.tab{border:1px solid var(--line);background:transparent;border-radius:999px;padding:.7rem 1rem;cursor:pointer;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}.tab.active{background:var(--charcoal);color:var(--cream)}.panel{display:none}.panel.active{display:block}@media(max-width:900px){.hero-grid,.about-grid,.contact{grid-template-columns:1fr}.links{display:none}.cards,.process,.trust{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid rgba(242,236,230,.16)}.hero{padding-top:36px}.bike-card .plate{min-height:330px}.section-head{display:block}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="wrap">
+      <a class="brand" href="#home" aria-label="Method Cycle Workshop home">
+        <div class="mark"><svg viewBox="0 0 64 64" fill="none"><path d="M10 52V10l22 23L54 10v42" stroke="currentColor" stroke-width="7"/><path d="M32 51V34" stroke="#B45A2A" stroke-width="7" stroke-linecap="round"/><path d="M23 28v9l9 7 9-7v-9" stroke="#B45A2A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="wordmark">METHOD <span>Cycle Workshop</span></div>
+      </a>
+      <div class="links"><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    </nav>
+  </header>
+
+  <main id="home" class="hero wrap">
+    <div class="hero-grid">
+      <section>
+        <div class="eyebrow">Madison / Dane County · Private workshop by appointment</div>
+        <h1 class="serif">Precision bicycle service for Madison riders.</h1>
+        <p class="sub serif">For riders who care about how it feels — not just that it works.</p>
+        <p class="copy">Method Cycle Workshop is built around refined mechanical work, thoughtful diagnosis, and the kind of service judgment that comes from years inside the bike industry — from brand knowledge to factory-level process to real-world consulting.</p>
+        <div class="cta-row"><a class="btn" href="#contact">Start a Service Request →</a><a class="btn secondary" href="#services">View Services</a></div>
+        <div class="trust"><div><strong>15 years</strong>in the bike industry</div><div><strong>Race mechanic</strong>background</div><div><strong>6+ years</strong>consulting in the bike space</div></div>
+      </section>
+
+      <aside class="bike-card" aria-label="Premium illustrated bike brand mark">
+        <div class="plate">
+          <svg class="bike-svg" viewBox="0 0 800 520" role="img" aria-label="Illustrated refined bicycle">
+            <defs><linearGradient id="copperFade" x1="0" x2="1"><stop offset="0" stop-color="#B45A2A"/><stop offset="1" stop-color="#7A6A56"/></linearGradient></defs>
+            <circle cx="205" cy="360" r="118" fill="none" stroke="#F2ECE6" stroke-width="10" opacity=".92"/><circle cx="595" cy="360" r="118" fill="none" stroke="#F2ECE6" stroke-width="10" opacity=".92"/>
+            <circle cx="205" cy="360" r="8" fill="#B45A2A"/><circle cx="595" cy="360" r="8" fill="#B45A2A"/>
+            <path d="M205 360 L335 220 L430 360 Z" fill="none" stroke="#F2ECE6" stroke-width="12" stroke-linejoin="round"/>
+            <path d="M335 220 L525 220 L430 360" fill="none" stroke="#F2ECE6" stroke-width="12" stroke-linejoin="round"/>
+            <path d="M525 220 L595 360 M525 220 L570 175" fill="none" stroke="#F2ECE6" stroke-width="12" stroke-linecap="round"/>
+            <path d="M335 220 L315 160 M285 160h85" fill="none" stroke="#F2ECE6" stroke-width="12" stroke-linecap="round"/>
+            <path d="M430 360 h-70 M395 330l35 30 35-30" fill="none" stroke="url(#copperFade)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M570 175c35-8 58 6 73 24" fill="none" stroke="#B45A2A" stroke-width="10" stroke-linecap="round"/>
+            <path d="M148 232c72-56 150-86 236-86 89 0 178 31 268 92" fill="none" stroke="#B45A2A" stroke-width="3" opacity=".45"/>
+            <g opacity=".45" stroke="#F2ECE6" stroke-width="2"><path d="M70 93h180"/><path d="M552 93h180"/><path d="M110 434h580"/></g>
+            <text x="400" y="88" fill="#F2ECE6" text-anchor="middle" font-size="20" letter-spacing="9">METHOD CYCLE WORKSHOP</text>
+            <text x="400" y="460" fill="#B45A2A" text-anchor="middle" font-size="15" letter-spacing="7">CLEAR · GROUNDED · PRECISE</text>
+          </svg>
+        </div>
+        <div class="bike-caption"><span><b>Refined service.</b><br/>Handled with care.</span><span><b>Workshop standard.</b><br/>Not volume-shop rushed.</span></div>
+      </aside>
+    </div>
+  </main>
+
+  <section id="services" class="section wrap">
+    <div class="section-head"><div><div class="eyebrow">Service board</div><h2 class="serif">A cleaner path to a better-feeling bike.</h2></div><p class="lead">The first service board is intentionally focused: diagnosis, refinement, and concierge-level handling. Pricing and deeper tier detail can be layered in after the structure is approved.</p></div>
+    <div class="tabbar"><button class="tab active" data-tab="core">Core Services</button><button class="tab" data-tab="consulting">Consulting</button><button class="tab" data-tab="logistics">Pickup / Drop-off</button></div>
+    <div id="core" class="panel active"><div class="cards"><article class="card"><div class="num">01</div><h3>Diagnostics</h3><p>For mystery noise, shifting issues, brake feel, safety concerns, or a bike that simply does not feel right.</p><ul><li>Structured inspection</li><li>Clear next-step plan</li><li>Repair priority guidance</li></ul></article><article class="card"><div class="num">02</div><h3>Refined Tune</h3><p>A focused tune for riders who want smooth shifting, confident braking, clean setup, and better overall feel.</p><ul><li>Adjustment and correction</li><li>Wear-point review</li><li>Post-service notes</li></ul></article><article class="card"><div class="num">03</div><h3>Concierge Tune</h3><p>Higher-touch service for valuable, beloved, or heavily used bikes where care, communication, and outcome matter.</p><ul><li>Appointment-first workflow</li><li>Deeper mechanical review</li><li>Pickup/drop-off options</li></ul></article></div></div>
+    <div id="consulting" class="panel"><div class="cards"><article class="card"><div class="num">A</div><h3>Bike Consultation</h3><p>Buying, upgrading, restoring, or deciding what is worth spending on. Built for riders who want smart direction before money gets wasted.</p></article><article class="card"><div class="num">B</div><h3>Build Planning</h3><p>Component choices, fit direction, use-case matching, and long-term serviceability thinking.</p></article><article class="card"><div class="num">C</div><h3>Ownership Strategy</h3><p>Maintenance plans, commuter reliability, and deciding what should be premium versus what should simply be durable.</p></article></div></div>
+    <div id="logistics" class="panel"><div class="cards"><article class="card"><div class="num">5</div><h3>Free local pickup</h3><p>Free pickup/drop-off within 5 miles of Hilldale with qualifying service minimums.</p></article><article class="card"><div class="num">50</div><h3>Show-up fee</h3><p>A $50 minimum protects the appointment and can be applied toward qualifying service work.</p></article><article class="card"><div class="num">✓</div><h3>Private workshop</h3><p>Drop-off by appointment only, so every bike has context before the work begins.</p></article></div></div>
+  </section>
+
+  <div class="dark"><section id="process" class="section wrap"><div class="section-head"><div><div class="eyebrow">Process</div><h2 class="serif">Book a time. We confirm the details. Your bike gets handled properly.</h2></div></div><div class="process"><div class="step"><div class="eyebrow">01</div><h3>Start a Service Request</h3><p>Tell me what the bike is doing, what you want it to feel like, and when you need it back.</p></div><div class="step"><div class="eyebrow">02</div><h3>Confirm the plan</h3><p>I review the request, clarify the scope, and set expectations before work begins.</p></div><div class="step"><div class="eyebrow">03</div><h3>Refined service</h3><p>The work is completed with clear communication, careful handling, and a focus on the final ride feel.</p></div></div></section></div>
+
+  <section id="about" class="section wrap"><div class="about-grid"><aside class="quote serif">“The goal is not just a bike that functions. The goal is a bike that feels settled, quiet, confident, and cared for.”</aside><div><div class="eyebrow">About Method</div><h2 class="serif">Brand knowledge meets watchmaker-level patience.</h2><p class="lead">Method Cycle Workshop is built from 15 years in the bike industry — including race mechanic work, manufacturer-trained experience, brand-side knowledge, and more than six years as a consultant in the bike space.</p><p class="lead">That background matters because the best service outcomes come from knowing why different brands make different choices, what standards matter, and where a rider should spend for real improvement instead of noise.</p></div></div></section>
+
+  <section id="contact" class="section wrap"><div class="contact"><div><div class="eyebrow">Start here</div><h2 class="serif">Start a Service Request.</h2><p class="fine">Madison / Dane County · Private workshop drop-off by appointment · Pickup and drop-off available by service minimum.</p></div><div><a class="btn" href="mailto:hello@methodcycleworkshop.com?subject=Service%20Request%20-%20Method%20Cycle%20Workshop">Email Service Request →</a><p class="fine">Replace this with your booking form link when ready.</p></div></div></section>
+  <footer class="wrap">© Method Cycle Workshop · Precision in the details. Care in every ride.</footer>
+
+  <script>
+    const tabs=document.querySelectorAll('.tab');
+    const panels=document.querySelectorAll('.panel');
+    tabs.forEach(tab=>tab.addEventListener('click',()=>{tabs.forEach(t=>t.classList.remove('active'));panels.forEach(p=>p.classList.remove('active'));tab.classList.add('active');document.getElementById(tab.dataset.tab).classList.add('active');}));
+  </script>
+</body>
+</html>
